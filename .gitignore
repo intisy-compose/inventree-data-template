@@ -1,5 +1,3 @@
-# Runtime state: hourly database dumps and their logs, the tailscale node identity (a secret), and
-# label sheets the catalog tool generates
+# Runtime state: hourly database dumps and their logs, and the tailscale node identity (a secret)
 backups/
 tailscale/
-labels/

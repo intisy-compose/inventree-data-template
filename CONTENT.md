@@ -2,9 +2,9 @@ Default `data/` folder for
 [inventree-compose](https://github.com/intisy-compose/inventree-compose), so a fresh
 `git clone --recursive` runs out of the box.
 
-It is mounted at `data/`: the db-backup sidecar writes its hourly database dumps to `backups/`, the
-Tailscale sidecar keeps its node identity (a secret) in `tailscale/`, and `catalog labels` writes
-its sheets to `labels/`. All three are runtime state and gitignored. The database and InvenTree's
+It is mounted at `data/`: the db-backup sidecar writes its hourly database dumps to `backups/` and
+the Tailscale sidecar keeps its node identity (a secret) in `tailscale/`. Both are runtime state and
+gitignored. The database and InvenTree's
 uploaded files live in Docker volumes; `backups/` is how the database gets back.
 
 ## Use your own data
