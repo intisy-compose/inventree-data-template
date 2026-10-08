@@ -1,0 +1,26 @@
+# Starter taxonomy for the inventree-compose catalog tool. Declare every category, field, location
+# and model the inventory may use; `.\docker-compose.ps1 catalog sync` applies it and `add` /
+# `update` refuse anything not declared here.
+
+[[categories]]
+name = "Laptops"
+description = "Portable computers."
+label = "large"
+
+[[fields]]
+name = "Brand"
+type = "TEXT"
+categories = ["Laptops"]
+required = true
+
+[[fields]]
+name = "Screen size (in)"
+type = "NUMBER"
+categories = ["Laptops"]
+
+[[locations]]
+name = "Office"
+
+[[models]]
+name = "Lenovo ThinkPad T14 Gen 3"
+category = "Laptops"
