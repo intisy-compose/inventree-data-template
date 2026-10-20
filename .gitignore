@@ -1,3 +1,6 @@
-# Runtime state: hourly database dumps and their logs, and the tailscale node identity (a secret)
+# Runtime state a public template must never carry: hourly database dumps and their logs, the tailscale
+# node identity and InvenTree's generated keys (both secrets), and uploaded media
 backups/
 tailscale/
+secrets/
+media/
